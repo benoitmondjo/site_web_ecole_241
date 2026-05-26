@@ -1,0 +1,18 @@
+@use "../abstact/variables" as var;
+.btn-1{
+    display: inline-block;
+    padding: .8rem 2.6rem;
+    background-color: var.$main_black;
+    color: var.$white;
+    border-radius: 6px;
+    font-weight: 500;
+}
+.btn-2{
+    display: inline-block;
+    padding: .8rem 2.6rem;
+    background-color: var.$white;
+    color: var.$main_black;
+    border-radius: 6px;
+    border: .1rem solid var.$main-black;
+    font-weight: 500;
+}

@@ -1,0 +1,6 @@
+@use "../abstact/variables" as var;
+.card-1{
+    background-color: var.$gray_light;
+    border-radius: 8px;
+    padding: 20px;
+}

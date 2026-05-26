@@ -1,0 +1,27 @@
+@use "../abstact/variables" as var;
+@use "../components/button";
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .logo{
+            font-size: 1.6rem;
+            color: var.$main-black;
+            font-weight: 700;
+        }
+
+        .link{
+            font-size: .9rem;
+            color: var.$gray_text;
+            text-transform: capitalize;
+            margin: 0 20px;
+        }
+    }
+}
