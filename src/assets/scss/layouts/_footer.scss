@@ -1,0 +1,48 @@
+@use "../abstact/variables" as var;
+
+.footer{
+
+
+    background-color: var.$gray_light;
+
+    .flex{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    h2{
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .line{
+        height: 2px;
+        background-color: var.$gray_separator;
+        width: 200px;
+        margin: 0 auto;
+    }
+    p{
+        text-align: center;
+        font-size: .8rem;
+        color: var.$gray_text;
+    }
+    .socials{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: .6rem;
+
+        width: 20rem;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        // border: .2rem solid blue;
+
+        span{
+            font-size: .9rem;
+            text-transform: capitalize;
+            font-weight: 500;
+        }
+    }
+}

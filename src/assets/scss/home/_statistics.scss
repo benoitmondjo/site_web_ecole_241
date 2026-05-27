@@ -1,10 +1,11 @@
 @use "../abstact/variables" as var;
 
 .state{
-    padding-top: 40rem;
-    padding-bottom: 2rem;
+    // padding-top: 40rem;
+    // padding-bottom: 2rem;
 
     .container{
+        // border: 8px solid green;
         background-color: var.$gray_light;
     }
 

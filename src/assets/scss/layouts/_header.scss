@@ -21,9 +21,52 @@
 
         .link{
             font-size: .9rem;
-            color: var.$gray_text;
+            color: var.$main-black;
             text-transform: capitalize;
             margin: 0 20px;
         }
+
     }
+}
+
+#menu-btn{
+    background: none;
+    padding: .6rem;
+    cursor: pointer;
+    
+    .fa-solid{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 890px){
+    .btn-postule{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+   .flex{
+        position: relative;
+
+        .nav{
+            position: absolute;
+            top: 100%;left: 0;
+            border-top: 2px solid var.$gray_separator;
+            right: 0;
+            backdrop-filter: blur(1rem);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+           .link{
+                display: block;
+                margin: .5rem 0;
+                padding: .8rem .5rem;
+                background-color: var.$gray_light;
+           }
+
+           &.active{
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+           }
+        }
+   }
 }
