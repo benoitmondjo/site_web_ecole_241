@@ -3,18 +3,26 @@
 .state{
     padding-top: 40rem;
     padding-bottom: 2rem;
+
     .container{
         background-color: var.$gray_light;
-        padding: 2rem;
     }
 
     .box-container{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, 16rem);
+        display: flex;
+        flex-wrap: wrap;
+
         .box{
             width: 100%;
-            // border: .1rem solid blue;
             text-align: center;
+            border: .1rem solid var.$gray_separator;
+            padding: 2rem;
+            flex: 1 1 13rem;
+
+            h2{
+                font-weight: 600;
+            }
+
             p{
                 color: var.$gray_text;
             }

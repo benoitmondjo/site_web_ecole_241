@@ -1,0 +1,36 @@
+@use "../abstact/variables" as var;
+
+.projects{
+
+
+    .box-container{
+        display: flex;
+        gap: .8rem;
+        flex-wrap: wrap;
+
+        .box{
+            flex: 1 1 12rem;
+            background-color: var.$gray_light;
+            padding: 1.5rem 3rem;
+            text-align: center;
+            border-radius: .6rem;
+
+            .image{
+                height: 7rem;
+                background-color: var.$gray_separator;
+                margin-bottom: .8rem;
+            }
+
+            h2{
+                font-size: .9rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+
+            p{
+                font-size: .8rem;
+                color: var.$gray_text;
+            }
+        }
+    }
+}

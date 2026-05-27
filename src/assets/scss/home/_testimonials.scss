@@ -1,0 +1,58 @@
+@use "../abstact/variables" as var;
+
+.testi{
+
+    .content{
+        margin: 0 auto;
+        margin-top: 2rem;
+        max-width: 40rem;
+
+        background-color: var.$gray_separator;
+        padding: 2rem 4rem;
+        min-height: 6rem;
+
+        box-shadow: 3px 2px 6px 1px  var.$gray_separator;
+        border:  1px solid var.$gray_separator;
+
+        p{
+            text-align: center;
+            color: var.$gray_text;
+            margin-bottom: 2rem;
+            
+        }
+
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: .5rem;
+
+            text-align: right;
+            font-weight: 500;
+            color: var.$main_black;
+
+            .span{
+                display: inline-block;
+                width: 10px;
+                height: 2px;
+                background-color: var.$main_black;
+            }
+
+            h4{
+                font-weight: 500;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 590px){
+    .testi .content{
+        padding: 2rem 1.5rem;
+    }
+}
+@media screen and (max-width: 310px){
+    .testi .content{
+        padding: 2rem .8rem;
+    }
+}
