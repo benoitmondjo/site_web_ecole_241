@@ -33,7 +33,8 @@
     background: none;
     padding: .6rem;
     cursor: pointer;
-    
+    display: none;
+
     .fa-solid{
         font-size: 1.6rem;
     }
@@ -46,6 +47,10 @@
 }
 
 @media screen and (max-width: 768px){
+
+    #menu-btn{
+        display: flex;
+    }
    .flex{
         position: relative;
 
