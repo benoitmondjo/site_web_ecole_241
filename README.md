@@ -14,6 +14,7 @@ Pour ce travail nous allons réaliser le site web de l'école 241, à partir d'u
 
 ## Les instructions de lancement ##
 ### Serveur locale ###
+**pnpm install**
 **pnpm run dev**
 
 ### Build ###
